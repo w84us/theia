@@ -167,6 +167,7 @@
 .p-Menu-item[data-type='separator'] > div {
   padding: 0;
   height: 9px;
+  opacity: 0.36;
 }
 
 
@@ -176,6 +177,14 @@
   position: relative;
   top: 4px;
   border-top: var(--theia-border-width) solid var(--theia-menu-separatorBackground);
+}
+
+.p-Menu-item[data-type='separator'] > div.p-Menu-itemIcon::after {
+  margin-left: 12px;
+}
+
+.p-Menu-item[data-type='separator'] > div.p-Menu-itemSubmenuIcon::after {
+  margin-right: 12px;
 }
 
 .p-Menu-itemIcon::before,
